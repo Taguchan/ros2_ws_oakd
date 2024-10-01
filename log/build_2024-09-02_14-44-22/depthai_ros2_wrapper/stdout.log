@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/PKG-INFO
+writing dependency_links to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/dependency_links.txt
+writing entry points to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/entry_points.txt
+writing requirements to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/requires.txt
+writing top-level names to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/top_level.txt
+reading manifest file '../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/SOURCES.txt'
+writing manifest file '../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/SOURCES.txt'
+running build
+running build_py
+copying depthai_ros2_wrapper/fer_preview.py -> /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/build/lib/depthai_ros2_wrapper
+running install
+running install_lib
+copying /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/build/lib/depthai_ros2_wrapper/fer_preview.py -> /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper
+byte-compiling /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper/fer_preview.py to fer_preview.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fer_preview script to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/depthai_ros2_wrapper
+Installing rgb_preview script to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/depthai_ros2_wrapper
+Installing stereo_preview script to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/depthai_ros2_wrapper
+writing list of installed files to '/home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/install.log'

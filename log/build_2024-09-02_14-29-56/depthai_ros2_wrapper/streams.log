@@ -1,0 +1,22 @@
+[0.277s] Invoking command in '/home/karin-22/ros2_ws_oakd/src/depthai_ros2_wrapper': PYTHONPATH=/home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/depthai_ros2_wrapper build --build-base /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/build install --record /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/install.log --single-version-externally-managed install_data
+[0.401s] running egg_info
+[0.402s] writing ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/PKG-INFO
+[0.402s] writing dependency_links to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/dependency_links.txt
+[0.402s] writing entry points to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/entry_points.txt
+[0.402s] writing requirements to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/requires.txt
+[0.402s] writing top-level names to ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/top_level.txt
+[0.403s] reading manifest file '../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/SOURCES.txt'
+[0.404s] writing manifest file '../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info/SOURCES.txt'
+[0.404s] running build
+[0.404s] running build_py
+[0.404s] running install
+[0.404s] running install_lib
+[0.404s] running install_data
+[0.404s] running install_egg_info
+[0.405s] removing '/home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper-0.0.0-py3.10.egg-info' (and everything under it)
+[0.406s] Copying ../../build/depthai_ros2_wrapper/depthai_ros2_wrapper.egg-info to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages/depthai_ros2_wrapper-0.0.0-py3.10.egg-info
+[0.406s] running install_scripts
+[0.416s] Installing rgb_preview script to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/depthai_ros2_wrapper
+[0.416s] Installing stereo_preview script to /home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/depthai_ros2_wrapper
+[0.416s] writing list of installed files to '/home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/install.log'
+[0.428s] Invoked command in '/home/karin-22/ros2_ws_oakd/src/depthai_ros2_wrapper' returned '0': PYTHONPATH=/home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/karin-22/ros2_ws_oakd/install/depthai_ros2_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/depthai_ros2_wrapper build --build-base /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/build install --record /home/karin-22/ros2_ws_oakd/build/depthai_ros2_wrapper/install.log --single-version-externally-managed install_data
