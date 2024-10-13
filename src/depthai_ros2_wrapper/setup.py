@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'rgb_preview = depthai_ros2_wrapper.rgb_preview:main', 
             'stereo_preview = depthai_ros2_wrapper.stereo_preview:main',
-            'fer_preview = depthai_ros2_wrapper.fer_preview:main'
+            'fer_preview = depthai_ros2_wrapper.fer_preview:main',
+            'fer_preview_multi = depthai_ros2_wrapper.fer_preview_multi:main'
         ],
     },
 )
