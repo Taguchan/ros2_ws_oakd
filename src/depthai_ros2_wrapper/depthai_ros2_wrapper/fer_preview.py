@@ -47,9 +47,6 @@ class RgbPreviewWithEmotion(Node):
         # Load the emotion detection model
         self.emotion_detector = FER(mtcnn=True)
 
-        # Initialize a simple ID counter for faces
-        self.face_id_counter = 0
-
     def timer_callback(self):
         inRgb = self.qRgb.get()
         cv_frame = inRgb.getCvFrame()
@@ -57,27 +54,24 @@ class RgbPreviewWithEmotion(Node):
         # Perform emotion detection
         result = self.emotion_detector.detect_emotions(cv_frame)
 
-        self.get_logger().info(f'Number of faces detected: {len(result)}')
+        #self.get_logger().info(f'Number of faces detected: {len(result)}')
 
-         # Sort faces by their x-coordinate (right to left)
-        result_sorted = sorted(result, key=lambda face: face['box'][0], reverse=True)
-
-        for idx, face in enumerate(result_sorted):
+        if result:
+            # 最初に検出された顔だけを処理
+            face = result[0]
             (x, y, w, h) = face["box"]
             emotions = face["emotions"]
             emotion, score = max(emotions.items(), key=lambda item: item[1])
 
-            # Assign an ID to each face (rightmost face is ID 1, increasing leftward)
-            face_id = idx + 1  # Start with ID 1 for the rightmost face
-
-
-            # Draw rectangle around detected face
+            # 検出された顔に矩形を描画
             cv2.rectangle(cv_frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
-            cv2.putText(cv_frame, f'ID: {face_id}, {emotion}: {score:.2f}', 
+            cv2.putText(cv_frame, f'{emotion}: {score:.2f}', 
                         (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 0), 2)
 
-            self.get_logger().info(f'Face ID: {face_id}, Emotion: {emotion}, Score: {score:.2f}')
-
+            # 表情とスコアをターミナルに出力
+            self.get_logger().info(f'Emotion: {emotion}, Score: {score:.2f}')
+        else:
+            self.get_logger().info('No faces detected')
 
         # Convert the modified frame to ROS image message
         ros_image_msg = self.bridge.cv2_to_imgmsg(cv_frame, encoding="bgr8")
